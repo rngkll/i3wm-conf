@@ -153,9 +153,16 @@ bar {
         status_command i3status
 }
 
+# lock screen
+bindsym Control+Mod1+l exec i3lock -c 000000
+
+#network manager
 exec --no-startup-id nm-applet
+
+#gnome settings
 exec --no-startup-id gnome-settings-daemon
 exec --no-startup-id gnome-sound-applet
+
 # nautilus as a daemon!
 exec --no-startup-id nautilus --no-default-window --no-desktop
 exec dropbox start
