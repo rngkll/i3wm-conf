@@ -155,11 +155,18 @@ bar {
 # start network manager applet
 exec --no-startup-id nm-applet
 
-# start gnome-settings-daemon
+# lock screen
+bindsym Control+Mod1+l exec i3lock -c 000000
+
+#network manager
+exec --no-startup-id nm-applet
+
+#gnome settings
 exec --no-startup-id gnome-settings-daemon
 
 # start gnome-sound-applet
 exec --no-startup-id gnome-sound-applet
+
 # nautilus as a daemon!
 exec --no-startup-id nautilus --no-default-window --no-desktop
 
